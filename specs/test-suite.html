@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Backbone-associations Test Suite</title>
+
+    <link rel="stylesheet" href="../node_modules/mocha-phantomjs/node_modules/mocha/mocha.css" type="text/css" media="screen"/>
+
+</head>
+<body>
+<div id="mocha"></div>
+
+<script type="text/javascript" src="../node_modules/underscore/underscore.js"></script>
+<script type="text/javascript" src="../node_modules/backbone/backbone.js"></script>
+<script type="text/javascript" src="../backbone-associations.js"></script>
+
+<script type="text/javascript" src="../node_modules/mocha/mocha.js"></script>
+<script type="text/javascript" src="../node_modules/chai/chai.js"></script>
+
+
+
+<script>
+  mocha.ui('bdd');
+  mocha.reporter('html');
+  expect = chai.expect;
+</script>
+<script type="text/javascript" src="specs.js"></script>
+<script>
+  if (window.mochaPhantomJS) {
+    mochaPhantomJS.run();
+  } else {
+    mocha.run();
+  }
+</script>
+</body>
+</html>
